@@ -15,6 +15,70 @@
     <link rel="stylesheet" href="css/plugins/swiper.min.css">
     <!-- courtney css -->
     <link rel="stylesheet" href="css/dark-mode.css">
+    <style>
+        .mil-content .mil-scroll-wrapper .mil-container {
+  width: calc(63% + 1px);
+}
+        /* -------------------------------------------
+
+right banner
+
+------------------------------------------- */
+.mil-right-banner {
+  position: fixed;
+  overflow: hidden;
+  right: 0;
+  width: 35%;
+  height: calc(100vh - 90px);
+  background-color: rgb(233, 233, 233);
+  -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+}
+@media screen and (max-width: 992px) {
+  .mil-right-banner {
+    display: none;
+  }
+}
+.mil-right-banner img {
+  position: absolute;
+  -o-object-position: top;
+     object-position: top;
+}
+.mil-right-banner .mil-banner-wrapper {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+}
+.mil-right-banner .mil-banner-wrapper .mil-banner-frame {
+  width: 100%;
+  height: 100%;
+}
+.mil-right-banner .mil-banner-wrapper .mil-banner-frame .mil-banner-bg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+}
+.mil-right-banner .mil-banner-wrapper .mil-banner-frame .mil-banner-bg.mil-blur {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+.mil-right-banner .mil-banner-wrapper .mil-banner-frame .mil-banner-person {
+  top: 0;
+  left: 0;
+  width: 106%;
+  height: 106%;
+  margin-left: -3%;
+  margin-top: -3%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+    </style>
     <!-- page name -->
     <title>Sabdella Legi</title>
 
@@ -54,7 +118,7 @@
                                 <a href="index.html">Home</a>
                             </li>
                             <li class="mil-has-children">
-                                <a href="">Resume</a>
+                                <a href="resume.html">Resume</a>
                             </li>
                             <li class="mil-has-children">
                                 <a href="portfolio.html">Portfolio</a>

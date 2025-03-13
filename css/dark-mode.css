@@ -636,24 +636,6 @@ preloader
 scrollbar
 
 ------------------------------------------- */
-.mil-progress-track {
-  position: absolute;
-  z-index: 99;
-  width: 4px;
-  height: calc(100vh - 90px);
-}
-.mil-progress-track .mil-progress {
-  width: 100%;
-  height: 0;
-  background-color: rgb(244, 67, 54);
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
-}
-@media screen and (max-width: 992px) {
-  .mil-progress-track {
-    display: none;
-  }
-}
 
 ::-webkit-scrollbar {
   display: none;
@@ -1193,7 +1175,7 @@ frame
   overflow: hidden;
   padding-right: 90px;
   padding-left: 90px;
-  width: calc(63% + 1px);
+  /* width: calc(63% + 1px); */
 }
 .mil-content .mil-scroll-wrapper .mil-container-fw {
   overflow: hidden;
@@ -1238,60 +1220,6 @@ frame
 right banner
 
 ------------------------------------------- */
-.mil-right-banner {
-  position: fixed;
-  overflow: hidden;
-  right: 0;
-  width: 35%;
-  height: calc(100vh - 90px);
-  background-color: rgb(233, 233, 233);
-  -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
-  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
-}
-@media screen and (max-width: 992px) {
-  .mil-right-banner {
-    display: none;
-  }
-}
-.mil-right-banner img {
-  position: absolute;
-  -o-object-position: top;
-     object-position: top;
-}
-.mil-right-banner .mil-banner-wrapper {
-  width: 100%;
-  height: 100%;
-  -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
-  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
-}
-.mil-right-banner .mil-banner-wrapper .mil-banner-frame {
-  width: 100%;
-  height: 100%;
-}
-.mil-right-banner .mil-banner-wrapper .mil-banner-frame .mil-banner-bg {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
-  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
-}
-.mil-right-banner .mil-banner-wrapper .mil-banner-frame .mil-banner-bg.mil-blur {
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
-}
-.mil-right-banner .mil-banner-wrapper .mil-banner-frame .mil-banner-person {
-  top: 0;
-  left: 0;
-  width: 106%;
-  height: 106%;
-  margin-left: -3%;
-  margin-top: -3%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 
 .mil-flying-skills {
   position: relative;
@@ -2810,7 +2738,7 @@ page transitions
 }
 
 html.is-animating .transition-fade {
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
 }
@@ -2841,9 +2769,7 @@ html.is-animating .mil-banner-frame .mil-banner-bg {
           transform: scale(1.1);
 }
 
-.mil-fw-page .mil-right-banner {
-  width: 4px;
-}
+
 .mil-fw-page .mil-banner-bg {
   opacity: 0;
 }
@@ -2856,12 +2782,6 @@ html.is-animating .mil-banner-frame .mil-banner-bg {
   opacity: 0;
   -webkit-transform: translateX(90px) rotate(-90deg);
           transform: translateX(90px) rotate(-90deg);
-}
-
-html.is-animating .mil-right-banner {
-  width: 35%;
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
 }
 
 .mil-flying-skills div {
