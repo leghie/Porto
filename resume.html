@@ -14,8 +14,244 @@
     <!-- swiper css -->
     <link rel="stylesheet" href="css/plugins/swiper.min.css">
     <!-- courtney css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/dark-mode.css">
     <!-- page name -->
+     <style>
+        /* custom-pages */
+.block-title {
+  display: block;
+  position: relative;
+  padding-right: 12px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+
+.block-title h2,
+.block-title h3,
+h3.comment-reply-title {
+  position: relative;
+  display: inline-block;
+  font-size: 21px;
+  margin: 0 0 20px;
+  padding-bottom: 6px;
+  z-index: 1;
+}
+
+.block-title h2 span,
+h3.comment-reply-title span {
+  color: #474fee;
+}
+
+.block-title h2:after,
+.block-title h3:after,
+h3.comment-reply-title:after,
+.blog-sidebar .sidebar-title h4:after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 24px;
+  background-color: #474fee;
+  height: 2px;
+  bottom: 0;
+}
+
+.block-title h2:before,
+.block-title h3:before,
+h3.comment-reply-title:before,
+.blog-sidebar .sidebar-title h4:before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  background-color: #eee;
+  height: 2px;
+  bottom: 0;
+}
+/* Timeline */
+.timeline-item {
+  position: relative;
+  padding: 25px 0 20px 40px;
+}
+
+.timeline-item:before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 100%;
+  background-color: #f5f6f9;
+  width: 1px;
+  left: 15px;
+  bottom: 5px;
+}
+
+.timeline-item:after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 1px;
+  background-color: #f5f6f9;
+  width: calc(100% - 15px);
+  left: 15px;
+  bottom: 3px;
+}
+
+.timeline-item:first-child {
+  padding-top: 3px;
+}
+
+.timeline-item:last-child:after {
+  display: none;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 30px;
+}
+
+.timeline-item h5.item-period {
+  display: inline-block;
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 5px -40px;
+  color: #222;
+  background-color: #fff;
+  padding: 0 10px;
+  line-height: 23px;
+  border: 2px solid #a6a7a8;
+  border-radius: 3px;
+}
+
+.timeline-item .item-company {
+  display: inline-block;
+  font-size: 13px;
+  color: #9e9e9e;
+  margin-left: 7px;
+}
+
+.timeline-item .item-title {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.timeline-item p {
+  font-size: .9em;
+}
+/* /Timeline */
+
+/* Skills First Style */
+.skills-info.skills-first-style {
+  margin-bottom: 30px;
+}
+
+.skills-info.skills-first-style h4 { 
+  font-size: 1em;
+  line-height: 1.1em;
+  position: relative; 
+  float: left;
+  margin: 0 0 8px;
+}
+
+.skills-first-style .skill-container {
+  position: relative;
+  background-color: #d6d7d8;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 4px;
+  margin-bottom: 17px;
+  width: 100%;
+}
+
+.skills-first-style .skill-value {
+    font-size: 12px;
+    line-height: 1.1em;
+    position: relative;
+    float: right;
+    margin: 0 0 4px;
+    color: #666768;
+}
+
+.skills-first-style .skill-percentage {
+  position: absolute;
+  background-color: #474fee;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  height: 6px;
+  padding: 0;
+  top: -1px;
+}
+
+/* --- Knowledges --- */
+.knowledges {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.knowledges li {
+  display: inline-block;
+  background-color: #474fee;
+  border-radius: 3px;
+  color: #fff;
+  padding: 5px 10px;
+  line-height: 1.2;
+  margin: 3px 2px;
+  font-size: 13px;
+}
+/* --- End of Knowledges --- */
+/* --- Certificates --- */
+.certificate-item {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  border: 2px solid #e6e7e8;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+a > .certificate-item:hover {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
+  -o-box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
+}
+.certi-logo {
+  display: table-cell;
+  width: 120px;
+  height: 100%;
+  background-color: #f7f7f7;
+  padding: 25px;
+  vertical-align: middle;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.certi-logo img {
+  display: block;
+  max-width: 100%;
+}
+.certi-content {
+  display: table-cell;
+  width: 100%;
+  padding: 20px 25px;
+  vertical-align: middle;
+}
+     </style>
     <title>Sabdella Legi</title>
 
 </head>
@@ -356,6 +592,7 @@
     <!-- swup js -->
     <script src="js/plugins/swup.min.js"></script>
     <!-- swup body class plugin js -->
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins/SwupBodyClassPlugin.min.js"></script>
     <!-- swiper js -->
     <script src="js/plugins/swiper.min.js"></script>
@@ -369,6 +606,30 @@
     <script src="js/plugins/parallax.js"></script>
     <!-- courtney js -->
     <script src="js/main.js"></script>
+    <script>
+        skillsStyles();
+    // Skills
+    function skillsStyles() {
+        var $custom_styles = "",
+            $custom_style = "";
+        $( '.skill-container' ).each( function() {
+            var value = $(this).attr('data-value'),
+                $id = $(this).attr('id');
+
+            if( value >= 101) {
+                value = '100';
+            }
+
+            if( typeof value != 'undefined' ) {
+                $custom_style = '#' + $id + ' .skill-percentage { width: ' + value + '%; } ';
+                $custom_styles += $custom_style;
+            }
+        });
+        $('head').append('<style data-styles="alan-skills-css" type="text/css">' + $custom_styles + '</style>');
+    }
+    // /Skills
+
+    </script>
 
 </body>
 

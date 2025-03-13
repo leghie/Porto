@@ -30,6 +30,7 @@ $(function () {
         prefix: '.mil-fw-page'
     });
 
+    
     /***************************
 
     register gsap plugins
@@ -624,3 +625,4 @@ $(function () {
     });
 
 });
+
